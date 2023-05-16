@@ -105,7 +105,10 @@
     // Statement 2: declare a variable with const, holding a Boolean: whether either amount1 OR amount2 is an odd number.
     // Statement 3: assign result6 to be a Boolean expression: your first var OR your second var OR the Boolean false.
     // Statement 4: reassign result6 to be itself minus amount3.
-    
+    const sameType = typeof amount1 === typeof amount2
+    const oddNum = (amount1 % 2 !== 0 || amount2 % 2 !== 0)
+    result6 = (amount1 % 2 === 0 || amount2 % 2 === 0 || amount3 % 2 === 0)
+    result6 -= amount3
 
     // 👉 CHALLENGE 7
     const friend1 = undefined;
@@ -117,6 +120,10 @@
     // Statement 2: declare a variable with const, holding a Boolean: whether both friend3 and friend4 are of the same type.
     // Statement 3: assign to result7 whether any of your variables holds the Boolean true.
     // Statement 4: assign result7 to be your second variable minus number 23.
+    const friendType = (typeof friend1 === typeof friend2)
+    const friendType2 = (typeof friend3 === typeof friend4)
+    result7 = (friendType === true || friendType2 === true)
+    result7 = (friendType2 - 23)
 
     // 👉 CHALLENGE 8
     const winter = 0;
@@ -129,6 +136,7 @@
     // Statement 3: declare a third variable holding whether season 85947 is not spring AND season 84957 is not fall.
     // Statement 4: assign result8 to be 707 minus the sum of your three variables.
     // ❗ Note: the modulo operator is the key to solving this mistery. Also, seasons are zero-based: the first one is 0.
+    
 
     // 🧪 TESTS, do not work below this line
     // 🧪 TESTS, do not work below this line
